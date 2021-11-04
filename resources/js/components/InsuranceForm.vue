@@ -1,12 +1,5 @@
 <template>
     <div class="container">
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-6 text-center mb-5">
-                <h2 class="heading-section">
-                    <img src="https://svgshare.com/i/bin.svg">
-                </h2>
-            </div>
-        </div>
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
                 <div class="wrap d-md-flex">
@@ -36,6 +29,7 @@
                                     filled
                                     label="Wybierz typ ubezpieczenia OC"
                                     dense
+                                    :menu-props="{'offset-y':1}"
                                 ></v-select>
                             </div>
                             <div class="form-group mb-3">
@@ -70,6 +64,7 @@
                                         color="#453CFF"
                                         value="primary"
                                         hide-details
+                                        :ripple=0
                                         v-model="lead.is_checked"
                                     ></v-checkbox>
                                 </div>
@@ -131,8 +126,5 @@ export default {
 </script>
 
 <style scoped>
-option {
-    padding: 10px;
-}
 
 </style>
