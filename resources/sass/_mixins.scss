@@ -1,0 +1,14 @@
+
+@mixin gradient-background(){
+    background: #0E00FF;
+    background: -webkit-linear-gradient(top left, #0E00FF, #453CFF);
+    background: -moz-linear-gradient(top left, #0E00FF, #453CFF);
+    background: linear-gradient(to bottom right, #0E00FF, #453CFF);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f75959', endColorstr='#f35587', GradientType=1 );
+}
+
+@mixin julia-shadow(){
+    -webkit-box-shadow: -4px 4px 16px 0px rgba(66, 68, 90, 0.1);
+    -moz-box-shadow: -4px 4px 16px 0px rgba(66, 68, 90, 0.1);
+    box-shadow: -4px 4px 16px 0px rgba(66, 68, 90, 0.1);
+}

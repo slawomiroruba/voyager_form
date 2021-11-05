@@ -2155,6 +2155,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "InsuranceForm",
@@ -37782,7 +37783,7 @@ var render = function () {
                         filled: "",
                         label: "Wybierz typ ubezpieczenia OC",
                         dense: "",
-                        "menu-props": { "offset-y": 1 },
+                        "menu-props": { "offset-y": true },
                       },
                     }),
                   ],
@@ -37854,37 +37855,7 @@ var render = function () {
                   1
                 ),
                 _vm._v(" "),
-                _c("div", { staticClass: "form-group d-flex" }, [
-                  _c(
-                    "div",
-                    { staticClass: "mr-3 text-left" },
-                    [
-                      _c("v-checkbox", {
-                        staticStyle: { "margin-top": "-4px" },
-                        attrs: {
-                          color: "#453CFF",
-                          value: "primary",
-                          "hide-details": "",
-                          ripple: 0,
-                        },
-                        model: {
-                          value: _vm.lead.is_checked,
-                          callback: function ($$v) {
-                            _vm.$set(_vm.lead, "is_checked", $$v)
-                          },
-                          expression: "lead.is_checked",
-                        },
-                      }),
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "text-md-left" }, [
-                    _vm._v(
-                      "\n                                Adres poczty elektronicznej podaję dobrowolnie w celu przystąpienia do Programu\n                                ubezpieczenia dla lekarzy członków OIL w Warszawie i WIL oraz zgadzam się na kontakt\n                                przez INS Services Sp. z o.o. KRS nr 0000754412, jako podmiot obsługujący ten\n                                program w podanym celu.\n                            "
-                    ),
-                  ]),
-                ]),
+                _vm._m(2),
                 _vm._v(" "),
                 _c("div", { staticClass: "form-group mb-3" }, [
                   _c(
@@ -37947,6 +37918,22 @@ var staticRenderFns = [
         _c("h3", { staticClass: "mb-4" }, [
           _vm._v("Przystąp do ubezpieczenia OC"),
         ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group d-flex" }, [
+      _c("div", { staticClass: "mr-3 text-left" }, [
+        _c("input", { attrs: { type: "checkbox" } }),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "text-md-left" }, [
+        _vm._v(
+          "\n                                    Adres poczty elektronicznej podaję dobrowolnie w celu przystąpienia do Programu\n                                    ubezpieczenia dla lekarzy członków OIL w Warszawie i WIL oraz zgadzam się na kontakt\n                                    przez INS Services Sp. z o.o. KRS nr 0000754412, jako podmiot obsługujący ten\n                                    program w podanym celu.\n                                "
+        ),
       ]),
     ])
   },

@@ -29,7 +29,7 @@
                                     filled
                                     label="Wybierz typ ubezpieczenia OC"
                                     dense
-                                    :menu-props="{'offset-y':1}"
+                                    :menu-props="{'offset-y':true}"
                                 ></v-select>
                             </div>
                             <div class="form-group mb-3">
@@ -59,14 +59,15 @@
 
                             <div class="form-group d-flex">
                                 <div class="mr-3 text-left">
-                                    <v-checkbox
-                                        style="margin-top: -4px;"
-                                        color="#453CFF"
-                                        value="primary"
-                                        hide-details
-                                        :ripple=0
-                                        v-model="lead.is_checked"
-                                    ></v-checkbox>
+<!--                                    <v-checkbox-->
+<!--                                        style="margin-top: -4px;"-->
+<!--                                        color="#453CFF"-->
+<!--                                        value="primary"-->
+<!--                                        hide-details-->
+<!--                                        :ripple=false-->
+<!--                                        v-model="lead.is_checked"-->
+<!--                                    ></v-checkbox>-->
+                                    <input type="checkbox">
                                 </div>
                                 <div class="text-md-left">
                                     Adres poczty elektronicznej podaję dobrowolnie w celu przystąpienia do Programu
