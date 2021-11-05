@@ -27,7 +27,7 @@
                     <a class="nav-link" href="#">Jak przystąpić</a>
                     <a class="nav-link" href="#">Pakiety</a>
                 </div>
-                <button class="btn btn-outline-primary custom-button">Kontakt</button>
+                <button class="btn custom-button">Kontakt</button>
             </div>
         </div>
     </nav>
@@ -69,6 +69,7 @@
         <div class="col-sm-12 col-md-6 col-lg-3 custom-card d-md-none">
             <i class="fas fa-user-tie mb-1"></i>
             <p>543<br>klientów</p>
+{{--            https://vrlps.co/MLm64dl/cp--}}
         </div>
     </div>
 

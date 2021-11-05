@@ -10094,6 +10094,15 @@ h3 {
   color: #383838;
 }
 
+.custom-button {
+  border: 1px solid #0e00ff;
+  color: #0e00ff;
+}
+.custom-button:hover {
+  color: #fff;
+  background-color: #0e00ff;
+}
+
 .custom-card {
   z-index: 3;
   border-radius: 5px;

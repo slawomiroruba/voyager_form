@@ -64,3 +64,13 @@
         }
     }
 }
+
+.custom-button {
+    border: 1px solid $primary;
+    color: $primary;
+
+    &:hover {
+        color: $white;
+        background-color: $primary;
+    }
+}
