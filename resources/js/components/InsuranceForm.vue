@@ -4,6 +4,7 @@
             <div class="col-md-12 col-lg-10">
                 <div class="wrap d-md-flex">
                     <div class="text-wrap p-4 p-lg-5 text-center d-flex align-items-center order-md-last">
+                        <div class="form-filter"></div>
                         <div class="text w-100">
                             <h2>Ubezpieczenia OC</h2>
                             <p>Wypełnij formularz a wyślemy Ci wniosek przystąpienia do ubezpieczenia.</p>
@@ -18,18 +19,14 @@
                         </div>
                         <form class="signin-form" @submit.prevent="addInsurance" method="post">
                             <div class="form-group mb-3">
-                                <!--                                    <label class="label" for="ins_type">Wybierz typ ubezpieczenia OC *</label>-->
-                                <!--                                    <select name="ins_type" class="form-control" id="ins_type" v-model="lead.ins_type">-->
-                                <!--                                        <option value="obowiazkowe" >Ubezpieczenie obowiązkowe</option>-->
-                                <!--                                        <option value="dobrowolne">Ubezpieczenie dobrowolne</option>-->
-                                <!--                                    </select>-->
-                                <!--                                    <input type="text" class="form-control" placeholder="Username" required>-->
                                 <v-select
                                     :items="items"
                                     filled
                                     label="Wybierz typ ubezpieczenia OC"
                                     dense
+                                    required
                                     :menu-props="{'offset-y':true}"
+                                    v-model="lead.ins_type"
                                 ></v-select>
                             </div>
                             <div class="form-group mb-3">
@@ -67,18 +64,18 @@
 <!--                                        :ripple=false-->
 <!--                                        v-model="lead.is_checked"-->
 <!--                                    ></v-checkbox>-->
-                                    <input type="checkbox">
+                                    <input type="checkbox" required id="agreement" v-model="lead.is_checked">
                                 </div>
-                                <div class="text-md-left">
+                                <label class="text-md-left" for="agreement">
                                     Adres poczty elektronicznej podaję dobrowolnie w celu przystąpienia do Programu
                                     ubezpieczenia dla lekarzy członków OIL w Warszawie i WIL oraz zgadzam się na kontakt
                                     przez INS Services Sp. z o.o. KRS nr 0000754412, jako podmiot obsługujący ten
                                     program w podanym celu.
-                                </div>
+                                </label>
                             </div>
-                            <div class="form-group mb-3">
+                            <div class="form-group mb-3 mt-4">
                                 <button type="submit" class="form-control btn btn-primary submit px-3">Wyślij</button>
-                                <p v-model="lead.error"></p>
+                                <p v-if="success" class="text-success mt-2 text-center">Formularz przesłany Prawidłowo</p>
                             </div>
                         </form>
                     </div>
@@ -116,9 +113,14 @@ export default {
                 data: this.lead
             }).then(res => {
                 this.success = true;
+                this.lead.email = '';
+                this.lead.is_checked = '';
+                this.lead.profession_numb = '';
+                this.lead.ins_type = '';
+                this.lead.is_checked = false;
             }).catch(e => {
                 console.log(e);
-                load.error = 'Niepowodzenie!'
+                load.error = 'Niepowodzenie!';
             })
 
         }
@@ -127,5 +129,7 @@ export default {
 </script>
 
 <style scoped>
-
+ .container {
+     border-radius: 5px;
+ }
 </style>
