@@ -79,7 +79,7 @@
     <h1 class="section-header">O programie</h1>
     <div class="row mt-6 d-flex align-items-center">
         <div class="col-md-5 text-center mt-4">
-            <img class="img_section-type-1" src="{{ url('/storage/img/female-doctor.jpg') }}" alt="female doctor">
+            <img class="img_section-type-1" src="{{ url('/storage/img/female-doctor.webp') }}" alt="female doctor">
         </div>
         <div class="col-md-6 text-center text-md-left mx-4 ml-md-3">
             <h1 class="section-subheader ">OIL w Warszawie zapewnia bezpłatne ubezpieczenie OC dla lekarzy i lekarzy
@@ -142,7 +142,7 @@
             <button class="btn btn-primary custom-button mt-3">Otrzymaj darmową wycenę</button>
         </div>
         <div class="col-md-5 text-center mt-4">
-            <img class="img_section-type-1" src="{{ url('/storage/img/female-doctor.jpg') }}" alt="female doctor">
+            <img class="img_section-type-1" src="{{ url('/storage/img/female-doctor.webp') }}" alt="female doctor">
         </div>
     </div>
 </section>
