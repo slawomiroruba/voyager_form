@@ -15,7 +15,7 @@
         <div class="container nav-wrapper">
             <a class="navbar-brand" href="#">
                 <img src="{{ url('/storage/img/logoipsum.svg') }}" alt="">
-            </a><button class="btn custom-button" onclick="window.location.href='/'">Powrót na stronę główną</button>
+            </a><button class="btn custom-button" onclick="window.location.href='/'">Powrót</button>
         </div>
     </nav>
     <div class="container subnav-hr"></div>

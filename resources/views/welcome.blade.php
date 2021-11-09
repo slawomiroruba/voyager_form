@@ -35,8 +35,8 @@
     <div class="container subnav-hr"></div>
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-10 col-md-6 ml-5">
+            <div class="row ">
+                <div class="col-10 col-md-6 ml-4 ml-md-5">
                     <h1 class="main-header">Ubezpieczenie Odpowiedzialności Cywilnej</h1>
                     <p class="main-subheader">Program ubezpieczenia lekarzy i lekarzy dentystów OIL w Warszawie </p>
                     <button class="btn btn-primary custom-button mt-3">Otrzymaj darmową wycenę</button>
