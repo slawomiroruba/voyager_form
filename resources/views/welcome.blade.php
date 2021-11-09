@@ -26,9 +26,9 @@
                     <a class="nav-link" href="#about">O programie</a>
                     <a class="nav-link" href="#isduty">Obowiązkowe?</a>
                     <a class="nav-link" href="#package">Pakiety</a>
-                    <a class="nav-link" href="#form">Formularz</a>
+                    <a class="nav-link" href="#form">Kontakt</a>
                 </div>
-                <button class="btn custom-button">Kontakt</button>
+                <button class="btn custom-button" onclick="window.location.href='/form'">Formularz</button>
             </div>
         </div>
     </nav>
